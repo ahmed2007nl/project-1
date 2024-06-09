@@ -1,0 +1,86 @@
+fa-fw is a class in fontawesome that makes all icons with
+a fixed width
+-=-=-=-=-=-=-=-=-=-=-=-
+scroll-bar , scroll-bar-track , scroll-bar-thumb search for this on how we style the
+scroll bar
+-=-=-=-=-=-=-=-=-=-===-
+when we make a multiple pages in same page we make a new html file with all the 
+links contents of the previous page and with the required modifications
+-=-=-=-=--=-=-=-=-=-=--=-
+if we need to make the function of the sideNav correctly we just need to make 
+the <a href="points to whatever page.html"> and in this new html file we 
+will add an active class on it's <a> 
+-=-=-=-=-=-=-=
+side Note:
+we can make the user's name dinamically update as a JS addition 
+-=--===-=--=
+to stop textarea resizing add 
+resize: none;
+
+-=-=-=-=-=-=-
+to make the line that passes through the text as completed task for ex, 
+use  text-decoration: line-through;
+-=-=-=-=-=-=
+to make a button on hover describe what it do when clicked add title atribute 
+-=-=-=-=-=-=-=-=-=-=-
+to remove boarder spacing in the table use :
+border-spacing : 0;
+-=-==-==-=--=
+to make the imgs in the table to overlap we need the margins to be -val
+except for the first img 
+
+img:not(:first-child){
+    margin: -20px;
+}
+-=-=--=-=-=
+to make the table responsive with scrolling in small screens
+  1-we need to make the the very big father div to be overFlow : hidden;
+which in our case is .content div 
+  2- we need to make a big div[.responsive-table in our case]
+ that containes the table and make overFlow-x : auto;
+
+ 3- indicate a min-width so the table doesn't shrink or overlap together 
+ -=-=-==-=-=-=-=-=-=-=-=-=
+The appearance: none; CSS property is used to remove the default
+ styling of an HTML element provided by the browser, allowing you to 
+ apply your custom styles. This property is especially useful for form 
+ elements like buttons, inputs, and select dropdowns,
+ which often come with default styles that vary across different browsers.
+ -=-==-=-=-=-=-=-=-=-=-
+ the webkit prefix is for safari
+ the moz prefix is for modzilla firefox
+ -=-=-==--=-=-=
+ to make the toogle switch we make a label contaianing a checkbox and a div
+ were the checkbox give it appearance of none and by event capturing the label
+ will click all it's children including the check box and the div
+ -=-=-=-=-=-=-=-=--=
+ when using fontawesome library in psudo class we do the following 
+  font-family: "Font Awesome 5 Free"; accesing the library and ofcourse link the 
+  page
+   with 
+  the cdn
+          content : "\f00d";  this is unicode as each icon has a unicode
+          font-weight: 600; we need to specify the font-weight or it will not appear!
+
+          -=-=-=-=-=-=-=
+
+          scale(0) makes the elements disappear
+          scale(1) makes the elements appear
+
+          and to make the vanish and appearance effect of the checkbox of the 
+          .widget-control  in the setting 
+          -we remove the appearance of the check box 
+          -we add a label for the checkbox id  (((after))) the checkbox 
+          -make the shape of the custom checkbox with pseudo classes for the label 
+          and remove {the correct icon} by scale (0) and rotate(360deg)
+          -then when the label is clicked , the checkbox is checked and then we
+          select the label by "+" selector then we do for the pseudo class
+          scale(1) rotate(0deg) , voila the animation , N'oublie pas la 
+          transition !
+
+          =-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-
+
+          Checkboxes or radio buttons each must have different name attributes if you want
+           to allow multiple selections. However, in cases where only one selection is 
+           required (such as gender indication), you must give all related radio buttons
+           the same name attribute to ensure only one can be selected.
