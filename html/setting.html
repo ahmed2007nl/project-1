@@ -1,0 +1,216 @@
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/Framework.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/Master.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template 4</title>
+</head>
+<body>
+    <div class="page d-flex">
+        <div class="sideNav w-70 bg-main ">
+            <h3 class="p-10 text-align-center ">user</h3>
+            <ul class="">
+                <li class=" p-10 text-align-center"><a class=" c-black p-10" href="../html/index.html"><i class=" fa-regular fa-chart-bar fa-fw"></i></a></li>
+                <li class="p-10 text-align-center"><a class=" active c-black p-10" href="../html/setting.html"><i class="fa-solid fa-gear fa-fw"></i></a></li>
+                <li class="p-10 text-align-center"><a class="c-black p-10" href="../html/profile.html"><i class="fa-regular fa-user fa-fw"></i></a></li>
+                <li class="p-10 text-align-center"><a class="c-black p-10" href="../html/projects.html"><i class="fa-solid fa-diagram-project fa-fw"></i></a></li>
+                <li class="p-10 text-align-center"><a class="c-black p-10" href="../html/courses.html"><i class="fa-solid fa-graduation-cap fa-fw"></i></a></li>
+                <li class="p-10 text-align-center"><a class="c-black p-10" href="../html/friends.html"><i class="fa-solid fa-user-group fa-fw"></i></a></li>
+                
+            </ul>
+        </div>
+       
+        <div class="content c-white bg-sec1">
+            <header class="bg-W d-flex ali-center">
+               <div class="searchBar w-fit-cont bg-W c-black d-flex ali-center  ">
+                <i class="fa-solid fa-magnifying-glass fa-fw m-10"></i>
+                <input type="search" placeholder="Type a keyWord">
+               </div>
+              <div class="icons p-10 d-flex  ali-center">
+                <span class="pos-rel notification m-10 w-fit-cont">
+                    <i class="fa-solid fa-bell fa-fw c-black "></i>
+                   </span>
+                   <img src="../../template 3 elsheco/images/avatar-03.png" alt="">
+              </div>
+            </header>
+            <h1 class="pos-rel m-10 w-fit-cont">Setting</h1>
+            <!-- toogle switch component  -->
+            <!-- <label>
+                <input class="toogle-checkbox" type="checkbox" >
+                <div class="toogle-switch"></div>
+            </label> -->
+           
+            <div class="setting-wraper bg-sec1 p-20">
+
+                <div class="site-control bg-sec2 p-10 ">
+                    <h2>site-control</h2>
+                    <p class="c-grey">Control The Website If There Is Maintenance</p>
+
+                    <div class="website-control d-flex jus-space-be ali-center m-t-10">
+                       <div>
+                        <h4>Website Control</h4>
+                        <p>Open/Close Website And Type The Reason</p>
+                       </div>
+                    <label>
+                        <input class="toogle-checkbox" type="checkbox" >
+                        <div class="toogle-switch"></div>
+                    </label>
+                    </div>
+                    <textarea class="m-t-10"  cols="20" id="" placeholder="close msg content"></textarea>
+                </div>
+
+                <div class="general-info bg-sec2 p-10 m-t-10">
+                    <h2>General info</h2>
+                    <p class="c-grey">General Information About Your Account</p>
+                    <br>
+                    <label for="FirstName">First Name</label>
+                    <br>
+                    <input placeholder="enter your First Name" type="text" name="" id="FirstName">
+                    <br>
+                    <br>
+                    <label for="LastName">Last Name</label>
+                    <br>
+                    <input placeholder="enter your last Name" type="text" name="" id="LastName">
+                    <br><br>
+                    <label for="Email"></label>
+                    <input value="gg@yahoo.com" disabled type="email"  name="" id="">
+                </div>
+
+                <div class="security bg-sec2 p-10 m-t-10">
+                    <h2>Security Info</h2>
+                    <p class="c-grey">Security Information About Your Account</p>
+                    <div class="box d-flex p-20 jus-space-be ali-center">
+                       <div class="left">
+                        <h4>Password</h4>
+                        <p>Last Change On 25/10/2021</p>
+                       </div>
+                       <div class="right">
+                        <a  class="bg-main p-10 br-10 c-sec2" href="#">change</a>
+                       </div>
+                    </div>
+                    <div class="box d-flex jus-space-be p-20 ali-center">
+                        <div class="right">
+                            <h4>Two-Factor Authentication</h4>
+                            <p>Enable/Disable The Feature</p>
+                        </div>
+                        <div class="left">
+                             <label>
+                                <input class="toogle-checkbox" type="checkbox" >
+                                <div class="toogle-switch"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="box d-flex jus-space-be p-20 ali-center">
+                      <div class="right">
+                        <h4>Devices</h4>
+                        <p>Check The Login Devices List</p>
+                      </div>
+                      <div class="left">
+                        <a class="bg-main p-10 br-10 c-sec2" href="">Devices</a>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="social-info bg-sec2 p-10 m-t-10">
+                    <h2>Social Info</h2>
+                    <p class="c-grey">Social Media Information</p>
+                    <div class="twitter d-flex ">
+                        <input type="text" placeholder="twitter Username">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+                    <div class="linkedin d-flex">
+                        <input type="text"  placeholder="linkedin Username">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <div class="facebook d-flex">
+                        <input type="text"  placeholder="facebook Username">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="youtube d-flex">
+                        <input type="text"  placeholder="youtube Username">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+
+                <div class="Widgets-control bg-sec2 p-10 m-t-10">
+                    <h2>Widgets Control</h2>
+                    <p class="c-grey">Show/Hide Widgets</p>   
+
+                    <div class="control d-flex m-t-10 ali-center g-gap-1 p-10">
+                     <input type="checkbox" id="one">
+                     <label class="pos-rel" for="one">quick draft</label>
+                    </div>             
+                    <div class="control d-flex m-t-10 ali-center g-gap-1 p-10">
+                     <input type="checkbox" id="two">
+                     <label class="pos-rel" for="two">Yearly Targets</label>
+                    </div>             
+                    <div class="control d-flex m-t-10 ali-center g-gap-1 p-10">
+                     <input type="checkbox" id="three">
+                     <label class="pos-rel" for="three">Tickets Statistics</label>
+                    </div>             
+                    <div class="control d-flex m-t-10 ali-center g-gap-1 p-10">
+                     <input type="checkbox" id="four">
+                     <label class="pos-rel" for="four">Latest News</label>
+                    </div>             
+                </div>
+
+                <div class="backup bg-sec2 p-10 m-t-10">
+                    <h2>Backup Manager</h2>
+                    <p class="c-grey m-b-10">Control Backup Time And Location</p>
+                    <p class="c-grey m-b-10">Control Backup Time And Location</p>
+                        <div class="control d-flex ali-center m-b-10 g-gap-1 p-10">
+                            <input type="radio" name="backup-time" id="radio-1">
+                            <label for="radio-1">Weekly</label>
+                        </div>
+                        <div class="control d-flex ali-center m-b-10 g-gap-1 p-10">
+                            <input type="radio" name="backup-time" id="radio-2">
+                            <label for="radio-2">Monthly</label>
+                        </div>
+                        <div class="control d-flex ali-center m-b-10 g-gap-1 p-10">
+                            <input type="radio" name="backup-time" id="radio-3">
+                            <label for="radio-3">Yearly</label>
+                        </div>
+
+
+                        <div class="backup-types d-flex f-dir-col">
+                            <label class="row" for="bt-1">
+                                <input type="radio" name="backup-tier" id="bt-1">
+                                <div class="p-10 text-align-center">
+                                    <i class="fa-solid fa-server"></i>
+                                    <p>MegaMan</p>
+                                </div>
+                            </label>
+                            <label class="row" for="bt-2">
+                                <input type="radio" name="backup-tier" id="bt-2">
+                                <div class="p-10 text-align-center">
+                                    <i class="fa-solid fa-server"></i>
+                                    <p>Zero</p>
+                                </div>
+                            </label>
+                            <label class="row" for="bt-3">
+                                <input type="radio" name="backup-tier" id="bt-3">
+                                <div class="p-10 text-align-center">
+                                    <i class="fa-solid fa-server"></i>
+                                    <p>Sigma</p>
+                                </div>
+                            </label>
+                        </div>
+                        
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <script src="../main.js"></script>
+</body>
+</html>
